@@ -15,6 +15,7 @@
 		14D496D51F9C6C790091D81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D496D31F9C6C790091D81D /* LaunchScreen.storyboard */; };
 		14D496E01F9C6C790091D81D /* smileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496DF1F9C6C790091D81D /* smileyTests.swift */; };
 		14D496EB1F9C6C790091D81D /* smileyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496EA1F9C6C790091D81D /* smileyUITests.swift */; };
+		14D496FB1F9C6E690091D81D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496FA1F9C6E690091D81D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		14D496E61F9C6C790091D81D /* smileyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smileyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D496EA1F9C6C790091D81D /* smileyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smileyUITests.swift; sourceTree = "<group>"; };
 		14D496EC1F9C6C790091D81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D496FA1F9C6E690091D81D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				14D496C71F9C6C790091D81D /* AppDelegate.swift */,
 				14D496C91F9C6C790091D81D /* ViewController.swift */,
 				14D496CB1F9C6C790091D81D /* Main.storyboard */,
+				14D496FA1F9C6E690091D81D /* MainViewController.swift */,
 				14D496D11F9C6C790091D81D /* Assets.xcassets */,
 				14D496D31F9C6C790091D81D /* LaunchScreen.storyboard */,
 				14D496D61F9C6C790091D81D /* Info.plist */,
@@ -265,6 +268,7 @@
 				14D496CA1F9C6C790091D81D /* ViewController.swift in Sources */,
 				14D496D01F9C6C790091D81D /* smiley.xcdatamodeld in Sources */,
 				14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */,
+				14D496FB1F9C6E690091D81D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +434,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU8BZ32U73;
 				INFOPLIST_FILE = smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.puzzledsean.smiley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,12 +451,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VU8BZ32U73;
 				INFOPLIST_FILE = smiley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.puzzledsean.smiley;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

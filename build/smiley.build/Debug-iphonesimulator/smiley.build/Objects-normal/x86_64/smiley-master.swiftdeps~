@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "4894958443038c5f4081c8d2a5cfc38f"
+build_time: [1508653739, 930443000]
+inputs:
+  "/Users/Sean/Documents/Coding/smiley/smiley/smiley/ViewController.swift": [1508652281, 0]
+  "/Users/Sean/Documents/Coding/smiley/smiley/smiley/AppDelegate.swift": [1508652281, 0]
+  "/Users/Sean/Documents/Coding/smiley/smiley/smiley/MainViewController.swift": !dirty [1508653739, 0]
