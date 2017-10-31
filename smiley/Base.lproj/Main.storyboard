@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,39 +46,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWd-F2-nbx">
-                                <rect key="frame" x="266" y="519" width="128" height="197"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weU-uT-4Vn">
-                                        <rect key="frame" x="0.0" y="0.0" width="132" height="197"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-eB-WAo">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="weU-uT-4Vn" firstAttribute="top" secondItem="nWd-F2-nbx" secondAttribute="top" id="CnO-M7-vgt"/>
-                                    <constraint firstItem="weU-uT-4Vn" firstAttribute="leading" secondItem="nWd-F2-nbx" secondAttribute="leading" id="OZJ-ad-4Q9"/>
-                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weU-uT-4Vn">
+                                <rect key="frame" x="298" y="580" width="96" height="136"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nWd-F2-nbx" firstAttribute="trailing" secondItem="kUg-Ya-icT" secondAttribute="trailingMargin" id="6JC-ec-J1g"/>
-                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="trailing" secondItem="weU-uT-4Vn" secondAttribute="trailing" constant="16" id="L5L-4a-2dt"/>
-                            <constraint firstItem="nWd-F2-nbx" firstAttribute="top" secondItem="EA9-0S-Q3q" secondAttribute="top" constant="455" id="XI5-0g-ope"/>
-                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="bottom" secondItem="weU-uT-4Vn" secondAttribute="bottom" constant="20" id="ojE-q6-aD6"/>
-                            <constraint firstAttribute="bottom" secondItem="nWd-F2-nbx" secondAttribute="bottom" constant="20" symbolic="YES" id="tZk-Ea-5OG"/>
-                            <constraint firstItem="nWd-F2-nbx" firstAttribute="leading" secondItem="EA9-0S-Q3q" secondAttribute="leading" constant="266" id="wW8-Ae-UKR"/>
+                            <constraint firstItem="z7X-eB-WAo" firstAttribute="leading" secondItem="EA9-0S-Q3q" secondAttribute="leading" id="3Oz-hK-X82"/>
+                            <constraint firstItem="weU-uT-4Vn" firstAttribute="top" secondItem="EA9-0S-Q3q" secondAttribute="top" constant="516" id="3ta-Ds-Hdu"/>
+                            <constraint firstItem="z7X-eB-WAo" firstAttribute="top" secondItem="EA9-0S-Q3q" secondAttribute="top" id="71Q-xm-Ug7"/>
+                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="trailing" secondItem="weU-uT-4Vn" secondAttribute="trailing" constant="20" id="B15-av-DTM"/>
+                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="trailing" secondItem="z7X-eB-WAo" secondAttribute="trailing" id="E27-Fh-xU3"/>
+                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="bottom" secondItem="weU-uT-4Vn" secondAttribute="bottom" constant="20" id="H1c-17-i53"/>
+                            <constraint firstItem="EA9-0S-Q3q" firstAttribute="bottom" secondItem="z7X-eB-WAo" secondAttribute="bottom" id="Sfr-JB-ZoU"/>
+                            <constraint firstItem="weU-uT-4Vn" firstAttribute="leading" secondItem="EA9-0S-Q3q" secondAttribute="leading" constant="298" id="ulZ-UK-r6P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EA9-0S-Q3q"/>
                     </view>
                     <connections>
                         <outlet property="cameraPreview" destination="weU-uT-4Vn" id="rLy-2f-fpX"/>
+                        <outlet property="videoPreview" destination="z7X-eB-WAo" id="z36-6v-Wjn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Iu-eK-zIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.8" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1208.6956521739132" y="114.94565217391305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jrF-NS-RDG">
