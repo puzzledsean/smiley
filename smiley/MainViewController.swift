@@ -14,10 +14,11 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     let captureSession = AVCaptureSession()
     var previewLayer:CALayer!
     var captureDevice:AVCaptureDevice!
+    private var faceLayers = [CAShapeLayer]()
 
     @IBOutlet weak var cameraPreview: UIView!
     @IBOutlet weak var videoPreview: UIView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         beginSession()
@@ -75,19 +76,35 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //        captureSession.commitConfiguration()
     }
     
+    func processBufferCaptured(buffer: CMSampleBuffer!, faceDetectionRequest: VNDetectFaceRectanglesRequest){
+        print("hi")
+        // Child class will override this to detect faces
+    }
+    
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
+        /*
+         Callback function that will be called for every frame of the video
+         */
+        
+        // get the frame from video
+        guard let pixelBuffer : CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+        
+        // create CoremL request
         let faceDetectionRequest = VNDetectFaceRectanglesRequest()
         let myRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
         try! myRequestHandler.perform([faceDetectionRequest])
-
+        
+        // detect face/draw rectangle around face
         DispatchQueue.main.async { [unowned self] in
+            self.faceLayers.forEach{ $0.removeFromSuperlayer() }
+            
+            self.faceLayers.removeAll()
             guard let results = faceDetectionRequest.results, results.count > 0 else {
                 return
             }
             
             for observation in faceDetectionRequest.results as! [VNFaceObservation] {
-                let boundingRect = observation.boundingBox
+                let boundingRect = observation.boundingBox.denormalized(newRect: self.previewLayer.frame)
                 print("found face", boundingRect)
                 let layer = CAShapeLayer()
                 let path = UIBezierPath(rect: boundingRect)
@@ -97,10 +114,11 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 layer.strokeColor = UIColor.yellow.cgColor
                 layer.lineWidth = 4
                 self.previewLayer.addSublayer(layer)
+                self.faceLayers.append(layer)
             }
         }
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -117,4 +135,19 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     }
     */
 
+}
+
+extension CGRect {
+    func denormalized(newRect: CGRect) -> CGRect
+    {
+        let viewWidth = newRect.size.width
+        let viewHeight = newRect.size.height
+        let standardRect = self.standardized
+        let width = standardRect.size.width * viewWidth
+        let height = standardRect.size.height * viewHeight
+        let x = standardRect.origin.x * viewWidth
+        let y = viewHeight - (standardRect.origin.y * viewHeight) - height
+        
+        return CGRect(x: x, y: y, width: width, height: height)
+    }
 }
