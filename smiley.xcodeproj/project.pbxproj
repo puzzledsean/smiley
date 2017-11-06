@@ -10,15 +10,16 @@
 		141783D31FAF9C0A00F98849 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141783D21FAF9C0A00F98849 /* FaceDetection.swift */; };
 		141783DC1FAFAF5500F98849 /* doggo.png in Resources */ = {isa = PBXBuildFile; fileRef = 141783DB1FAFAF5500F98849 /* doggo.png */; };
 		141783DE1FAFAFAF00F98849 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 141783DD1FAFAFAF00F98849 /* cat.png */; };
+		14AA8C291FAFB67F00023C0E /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */; };
 		14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C71F9C6C790091D81D /* AppDelegate.swift */; };
 		14D496CA1F9C6C790091D81D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C91F9C6C790091D81D /* ViewController.swift */; };
 		14D496CD1F9C6C790091D81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D496CB1F9C6C790091D81D /* Main.storyboard */; };
-		14D496D01F9C6C790091D81D /* smiley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14D496CE1F9C6C790091D81D /* smiley.xcdatamodeld */; };
 		14D496D21F9C6C790091D81D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D496D11F9C6C790091D81D /* Assets.xcassets */; };
 		14D496D51F9C6C790091D81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D496D31F9C6C790091D81D /* LaunchScreen.storyboard */; };
 		14D496E01F9C6C790091D81D /* smileyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496DF1F9C6C790091D81D /* smileyTests.swift */; };
 		14D496EB1F9C6C790091D81D /* smileyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496EA1F9C6C790091D81D /* smileyUITests.swift */; };
 		14D496FB1F9C6E690091D81D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496FA1F9C6E690091D81D /* MainViewController.swift */; };
+		F21968BD3AF238E40EB4B25E /* Pods_smiley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CE66DD0ED1471F5A225F0 /* Pods_smiley.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,11 @@
 		141783D21FAF9C0A00F98849 /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		141783DB1FAFAF5500F98849 /* doggo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doggo.png; path = ../../../../../../Desktop/doggo.png; sourceTree = "<group>"; };
 		141783DD1FAFAFAF00F98849 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../../../../../../Desktop/cat.png; sourceTree = "<group>"; };
+		14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		14D496C41F9C6C790091D81D /* smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D496C71F9C6C790091D81D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D496C91F9C6C790091D81D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14D496CC1F9C6C790091D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14D496CF1F9C6C790091D81D /* smiley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = smiley.xcdatamodel; sourceTree = "<group>"; };
 		14D496D11F9C6C790091D81D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D496D41F9C6C790091D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D496D61F9C6C790091D81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +58,11 @@
 		14D496EA1F9C6C790091D81D /* smileyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smileyUITests.swift; sourceTree = "<group>"; };
 		14D496EC1F9C6C790091D81D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14D496FA1F9C6E690091D81D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		173EF14EB3828CC3B3AD885A /* Pods_smileyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smileyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		243AD07E0F115A64957CE159 /* Pods_smileyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smileyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFF2EF0B439DCE0DE2DD9C3 /* Pods-smiley.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smiley.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smiley/Pods-smiley.debug.xcconfig"; sourceTree = "<group>"; };
+		A1A390AE89E46646140E3619 /* Pods-smiley.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smiley.release.xcconfig"; path = "Pods/Target Support Files/Pods-smiley/Pods-smiley.release.xcconfig"; sourceTree = "<group>"; };
+		E89CE66DD0ED1471F5A225F0 /* Pods_smiley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smiley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21968BD3AF238E40EB4B25E /* Pods_smiley.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +107,8 @@
 				14D496DE1F9C6C790091D81D /* smileyTests */,
 				14D496E91F9C6C790091D81D /* smileyUITests */,
 				14D496C51F9C6C790091D81D /* Products */,
+				58079D9245F62707466184C0 /* Frameworks */,
+				CB87495953CF011C1D786215 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,13 +128,13 @@
 				141783DA1FAFAF3B00F98849 /* Images */,
 				14D496C71F9C6C790091D81D /* AppDelegate.swift */,
 				14D496C91F9C6C790091D81D /* ViewController.swift */,
-				14D496CB1F9C6C790091D81D /* Main.storyboard */,
+				141783D21FAF9C0A00F98849 /* FaceDetection.swift */,
+				14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */,
 				14D496FA1F9C6E690091D81D /* MainViewController.swift */,
+				14D496CB1F9C6C790091D81D /* Main.storyboard */,
 				14D496D11F9C6C790091D81D /* Assets.xcassets */,
 				14D496D31F9C6C790091D81D /* LaunchScreen.storyboard */,
 				14D496D61F9C6C790091D81D /* Info.plist */,
-				14D496CE1F9C6C790091D81D /* smiley.xcdatamodeld */,
-				141783D21FAF9C0A00F98849 /* FaceDetection.swift */,
 			);
 			path = smiley;
 			sourceTree = "<group>";
@@ -148,6 +157,25 @@
 			path = smileyUITests;
 			sourceTree = "<group>";
 		};
+		58079D9245F62707466184C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89CE66DD0ED1471F5A225F0 /* Pods_smiley.framework */,
+				173EF14EB3828CC3B3AD885A /* Pods_smileyTests.framework */,
+				243AD07E0F115A64957CE159 /* Pods_smileyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB87495953CF011C1D786215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CFF2EF0B439DCE0DE2DD9C3 /* Pods-smiley.debug.xcconfig */,
+				A1A390AE89E46646140E3619 /* Pods-smiley.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D496EF1F9C6C790091D81D /* Build configuration list for PBXNativeTarget "smiley" */;
 			buildPhases = (
+				5FC06521713FA1455120AFDD /* [CP] Check Pods Manifest.lock */,
 				14D496C01F9C6C790091D81D /* Sources */,
 				14D496C11F9C6C790091D81D /* Frameworks */,
 				14D496C21F9C6C790091D81D /* Resources */,
+				636BDF78ADC671A562F3E7C4 /* [CP] Embed Pods Frameworks */,
+				9C381A94182A32EBEC41EF1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +310,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FC06521713FA1455120AFDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smiley-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		636BDF78ADC671A562F3E7C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smiley/Pods-smiley-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smiley/Pods-smiley-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C381A94182A32EBEC41EF1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smiley/Pods-smiley-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14D496C01F9C6C790091D81D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,7 +377,7 @@
 			files = (
 				141783D31FAF9C0A00F98849 /* FaceDetection.swift in Sources */,
 				14D496CA1F9C6C790091D81D /* ViewController.swift in Sources */,
-				14D496D01F9C6C790091D81D /* smiley.xcdatamodeld in Sources */,
+				14AA8C291FAFB67F00023C0E /* FacebookViewController.swift in Sources */,
 				14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */,
 				14D496FB1F9C6E690091D81D /* MainViewController.swift in Sources */,
 			);
@@ -452,6 +543,7 @@
 		};
 		14D496F01F9C6C790091D81D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFF2EF0B439DCE0DE2DD9C3 /* Pods-smiley.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -469,6 +561,7 @@
 		};
 		14D496F11F9C6C790091D81D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A390AE89E46646140E3619 /* Pods-smiley.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -590,19 +683,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		14D496CE1F9C6C790091D81D /* smiley.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				14D496CF1F9C6C790091D81D /* smiley.xcdatamodel */,
-			);
-			currentVersion = 14D496CF1F9C6C790091D81D /* smiley.xcdatamodel */;
-			path = smiley.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 14D496BC1F9C6C790091D81D /* Project object */;
 }

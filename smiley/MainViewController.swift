@@ -24,10 +24,8 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         beginSession()
         
         // facebook video data
-        let array = ["https://video.xx.fbcdn.net/v/t43.1792-2/17608273_435416326811385_2238057795238756352_n.mp4?efg=eyJybHIiOjE1MDAsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1500&vabr=691&oh=fa3b30ec8145f13cb64e3139e2b3e6de&oe=59F05442",
-                     "https://video.xx.fbcdn.net/v/t43.1792-2/22736705_848024615357448_6312478834121768960_n.mp4?efg=eyJybHIiOjQ1MTUsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=4515&vabr=3010&oh=bd163a276b0aa490ef7789be16c53e49&oe=59F03BE6",
-                     "https://video.xx.fbcdn.net/v/t42.1790-2/22722574_883948555114444_4372938574673215488_n.mp4?efg=eyJybHIiOjc5NSwicmxhIjo1MTIsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=795&vabr=442&oh=110127afee3603c7afe0e990d18c81b7&oe=59EF4E51",
-                     "https://video.xx.fbcdn.net/v/t43.1792-2/22740699_1922574394735896_4908542509975601152_n.mp4?efg=eyJybHIiOjM1OTIsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=3592&vabr=2395&oh=55ed4ce520e675591b2042515f2ec01b&oe=59EF5BE0"]
+        let array = ["https://video.xx.fbcdn.net/v/t43.1792-2/22745288_553245285034216_3669178629553651712_n.mp4?efg=eyJybHIiOjI3MTYsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2716&vabr=1811&oh=40853a739802916d8f3498bf99959741&oe=5A010824",
+                     "https://video.xx.fbcdn.net/v/t43.1792-2/23129143_230031627531804_8521591771010957312_n.mp4?efg=eyJybHIiOjI4NDQsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2844&vabr=1896&oh=db81d1864544d80c769bce83878e0095&oe=5A01E133"]
         let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
         let facebookVideoURL = array[randomIndex]
         
@@ -74,11 +72,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
 //        }
 //
 //        captureSession.commitConfiguration()
-    }
-    
-    func processBufferCaptured(buffer: CMSampleBuffer!, faceDetectionRequest: VNDetectFaceRectanglesRequest){
-        print("hi")
-        // Child class will override this to detect faces
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {

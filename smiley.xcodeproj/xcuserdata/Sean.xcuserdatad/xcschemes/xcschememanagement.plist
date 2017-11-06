@@ -7,7 +7,25 @@
 		<key>smiley.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>14D496C31F9C6C790091D81D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14D496DA1F9C6C790091D81D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14D496E51F9C6C790091D81D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
