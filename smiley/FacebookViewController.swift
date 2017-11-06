@@ -15,6 +15,8 @@ class FacebookViewController: UIViewController, FBSDKLoginButtonDelegate{
         if let _ = FBSDKAccessToken.current() {
             // User is logged in, use 'accessToken' here.
             print("already logged in")
+            print(FBSDKAccessToken.current().tokenString)
+
             DispatchQueue.main.async() {
                 [unowned self] in
                 self.performSegue(withIdentifier: "signedInSegue", sender: self)
@@ -44,11 +46,11 @@ class FacebookViewController: UIViewController, FBSDKLoginButtonDelegate{
             (connection, result, err) in
             
             if err != nil{
-                print("Failed to grab user data:", err)
+                print("Failed to grab user data:", err as Any)
                 return
             }
             
-            print(result)
+            print(result as Any)
             print(FBSDKAccessToken.current().tokenString)
             self.performSegue(withIdentifier: "signedInSegue", sender: nil)
 

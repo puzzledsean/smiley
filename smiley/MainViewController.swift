@@ -24,6 +24,7 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         beginSession()
         
         // facebook video data
+        // hard coded for now
         let array = ["https://video.xx.fbcdn.net/v/t43.1792-2/22745288_553245285034216_3669178629553651712_n.mp4?efg=eyJybHIiOjI3MTYsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2716&vabr=1811&oh=40853a739802916d8f3498bf99959741&oe=5A010824",
                      "https://video.xx.fbcdn.net/v/t43.1792-2/23129143_230031627531804_8521591771010957312_n.mp4?efg=eyJybHIiOjI4NDQsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2844&vabr=1896&oh=db81d1864544d80c769bce83878e0095&oe=5A01E133"]
         let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
@@ -62,16 +63,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         let dataOutput = AVCaptureVideoDataOutput()
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(dataOutput)
-        
-//        dataOutput.videoSettings = [((kCVPixelBufferPixelFormatTypeKey as NSString) as String):NSNumber(value:kCVPixelFormatType_32BGRA)]
-//
-//        dataOutput.alwaysDiscardsLateVideoFrames = true
-//
-//        if captureSession.canAddOutput(dataOutput){
-//            captureSession.addOutput(dataOutput)
-//        }
-//
-//        captureSession.commitConfiguration()
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -117,7 +108,9 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         // Dispose of any resources that can be recreated.
     }
     
-
+    func processBufferCaptured(buffer: CMSampleBuffer!, faceDetectionRequest:VNDetectFaceRectanglesRequest){
+        // to be overrided in child
+    }
     /*
     // MARK: - Navigation
 

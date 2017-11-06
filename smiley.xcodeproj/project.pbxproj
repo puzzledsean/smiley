@@ -12,7 +12,7 @@
 		141783DE1FAFAFAF00F98849 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 141783DD1FAFAFAF00F98849 /* cat.png */; };
 		14AA8C291FAFB67F00023C0E /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */; };
 		14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C71F9C6C790091D81D /* AppDelegate.swift */; };
-		14D496CA1F9C6C790091D81D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C91F9C6C790091D81D /* ViewController.swift */; };
+		14D496CA1F9C6C790091D81D /* VideoSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C91F9C6C790091D81D /* VideoSelectionController.swift */; };
 		14D496CD1F9C6C790091D81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D496CB1F9C6C790091D81D /* Main.storyboard */; };
 		14D496D21F9C6C790091D81D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D496D11F9C6C790091D81D /* Assets.xcassets */; };
 		14D496D51F9C6C790091D81D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D496D31F9C6C790091D81D /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 		14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		14D496C41F9C6C790091D81D /* smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D496C71F9C6C790091D81D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14D496C91F9C6C790091D81D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14D496C91F9C6C790091D81D /* VideoSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSelectionController.swift; sourceTree = "<group>"; };
 		14D496CC1F9C6C790091D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14D496D11F9C6C790091D81D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D496D41F9C6C790091D81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			children = (
 				141783DA1FAFAF3B00F98849 /* Images */,
 				14D496C71F9C6C790091D81D /* AppDelegate.swift */,
-				14D496C91F9C6C790091D81D /* ViewController.swift */,
+				14D496C91F9C6C790091D81D /* VideoSelectionController.swift */,
 				141783D21FAF9C0A00F98849 /* FaceDetection.swift */,
 				14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */,
 				14D496FA1F9C6E690091D81D /* MainViewController.swift */,
@@ -376,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				141783D31FAF9C0A00F98849 /* FaceDetection.swift in Sources */,
-				14D496CA1F9C6C790091D81D /* ViewController.swift in Sources */,
+				14D496CA1F9C6C790091D81D /* VideoSelectionController.swift in Sources */,
 				14AA8C291FAFB67F00023C0E /* FacebookViewController.swift in Sources */,
 				14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */,
 				14D496FB1F9C6E690091D81D /* MainViewController.swift in Sources */,
