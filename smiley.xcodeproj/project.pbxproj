@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		141783D31FAF9C0A00F98849 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141783D21FAF9C0A00F98849 /* FaceDetection.swift */; };
-		141783DC1FAFAF5500F98849 /* doggo.png in Resources */ = {isa = PBXBuildFile; fileRef = 141783DB1FAFAF5500F98849 /* doggo.png */; };
-		141783DE1FAFAFAF00F98849 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 141783DD1FAFAFAF00F98849 /* cat.png */; };
+		14824C451FBA5287007427A6 /* doggo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14824C431FBA5287007427A6 /* doggo.png */; };
+		14824C461FBA5287007427A6 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 14824C441FBA5287007427A6 /* cat.png */; };
 		14AA8C291FAFB67F00023C0E /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */; };
 		14D496C81F9C6C790091D81D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C71F9C6C790091D81D /* AppDelegate.swift */; };
 		14D496CA1F9C6C790091D81D /* VideoSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D496C91F9C6C790091D81D /* VideoSelectionController.swift */; };
@@ -41,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		141783D21FAF9C0A00F98849 /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
-		141783DB1FAFAF5500F98849 /* doggo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doggo.png; path = ../../../../../../Desktop/doggo.png; sourceTree = "<group>"; };
-		141783DD1FAFAFAF00F98849 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../../../../../../Desktop/cat.png; sourceTree = "<group>"; };
+		14824C431FBA5287007427A6 /* doggo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doggo.png; sourceTree = "<group>"; };
+		14824C441FBA5287007427A6 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		14AA8C281FAFB67F00023C0E /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		14D496C41F9C6C790091D81D /* smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D496C71F9C6C790091D81D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 		141783DA1FAFAF3B00F98849 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				141783DB1FAFAF5500F98849 /* doggo.png */,
-				141783DD1FAFAFAF00F98849 /* cat.png */,
+				14824C441FBA5287007427A6 /* cat.png */,
+				14824C431FBA5287007427A6 /* doggo.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -286,8 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141783DE1FAFAFAF00F98849 /* cat.png in Resources */,
-				141783DC1FAFAF5500F98849 /* doggo.png in Resources */,
+				14824C461FBA5287007427A6 /* cat.png in Resources */,
+				14824C451FBA5287007427A6 /* doggo.png in Resources */,
 				14D496D51F9C6C790091D81D /* LaunchScreen.storyboard in Resources */,
 				14D496D21F9C6C790091D81D /* Assets.xcassets in Resources */,
 				14D496CD1F9C6C790091D81D /* Main.storyboard in Resources */,

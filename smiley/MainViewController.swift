@@ -9,35 +9,41 @@
 import UIKit
 import AVKit
 import Vision
+import FBSDKLoginKit
 
 class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     let captureSession = AVCaptureSession()
     var previewLayer:CALayer!
     var captureDevice:AVCaptureDevice!
     private var faceLayers = [CAShapeLayer]()
+    var facebookVideoURL:String = ""
+    let group = DispatchGroup()
+    
+    var facebookPageID = "10487409466"; // default to dogspotting
 
     @IBOutlet weak var cameraPreview: UIView!
     @IBOutlet weak var videoPreview: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        group.enter()
+        // get facebook video URL
+        self.getFacebookVideoURL { (result) in
+            self.facebookVideoURL = result["source"] as! NSString as String;
+            print("got facebookVideoURL from callback", self.facebookVideoURL)
+            self.group.leave()
+            
+            let videoURL = URL(string: self.facebookVideoURL)
+            let player = AVPlayer(url: videoURL!)
+            
+            // stream facebook video videoPreview UIView
+            let playerLayer = AVPlayerLayer(player: player)
+            playerLayer.frame = self.videoPreview.bounds
+            self.videoPreview.layer.addSublayer(playerLayer)
+            player.play()
+        }
         beginSession()
-        
-        // facebook video data
-        // hard coded for now
-        let array = ["https://video.xx.fbcdn.net/v/t43.1792-2/22745288_553245285034216_3669178629553651712_n.mp4?efg=eyJybHIiOjI3MTYsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2716&vabr=1811&oh=40853a739802916d8f3498bf99959741&oe=5A010824",
-                     "https://video.xx.fbcdn.net/v/t43.1792-2/23129143_230031627531804_8521591771010957312_n.mp4?efg=eyJybHIiOjI4NDQsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=2844&vabr=1896&oh=db81d1864544d80c769bce83878e0095&oe=5A01E133"]
-        let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
-        let facebookVideoURL = array[randomIndex]
-        
-        let videoURL = URL(string: facebookVideoURL)
-        let player = AVPlayer(url: videoURL!)
-        
-        // stream facebook video videoPreview UIView
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = videoPreview.bounds
-        videoPreview.layer.addSublayer(playerLayer)
-        player.play()
     }
     
     func beginSession(){
@@ -103,6 +109,46 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         }
     }
     
+    func getFacebookVideoURL(completion: ((_ result:NSDictionary)->Void)?){
+        group.enter()
+        FBSDKGraphRequest(graphPath: "/\(facebookPageID)/videos", parameters: [:]).start {
+            (connection, result, err) -> Void in
+            
+            if err != nil{
+                print("Failed to grab user data:", err as Any)
+                return
+            }
+            
+            // get videos from Dogspotting
+            let jsonResult = result as! NSDictionary
+            let result:NSArray = jsonResult["data"] as! NSArray
+            let randomIndex = Int(arc4random_uniform(UInt32(result.count)))
+            
+            // choose random video to watch
+            let facebookVideo:NSDictionary = result[randomIndex] as! NSDictionary
+            let facebookVideoID:NSString = facebookVideo["id"] as! NSString
+            let access_token = FBSDKAccessToken.current().tokenString
+            
+            self.group.leave()
+            
+            self.group.enter()
+            // request for video URL
+            FBSDKGraphRequest(graphPath: facebookVideoID as String, parameters: ["fields":"source,description,length", "access_token":access_token!]).start {
+                (connection, query_result, query_err) -> Void in
+
+                if query_err != nil{
+                    print("Failed to grab user data:", err as Any)
+                    return
+                }
+
+                let queryResult:NSDictionary = query_result as! NSDictionary
+                print(queryResult)
+                
+                completion?(queryResult)
+                self.group.leave()
+            }
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

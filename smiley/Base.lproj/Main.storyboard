@@ -54,6 +54,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onCatVideoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lnc-Pw-ThV"/>
                                     <segue destination="g6i-Fa-gDZ" kind="show" id="5vp-qr-Tuz"/>
                                 </connections>
                             </button>
@@ -64,6 +65,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="onDogVideoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXr-KN-Sf0"/>
                                     <segue destination="g6i-Fa-gDZ" kind="show" id="Pxt-IA-vrX"/>
                                 </connections>
                             </button>

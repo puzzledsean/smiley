@@ -16,6 +16,7 @@ class FacebookViewController: UIViewController, FBSDKLoginButtonDelegate{
             // User is logged in, use 'accessToken' here.
             print("already logged in")
             print(FBSDKAccessToken.current().tokenString)
+            print("got FB token, transitioning to video selection controller")
 
             DispatchQueue.main.async() {
                 [unowned self] in
@@ -50,8 +51,8 @@ class FacebookViewController: UIViewController, FBSDKLoginButtonDelegate{
                 return
             }
             
-            print(result as Any)
             print(FBSDKAccessToken.current().tokenString)
+            print("got FB token, transitioning to video selection controller")
             self.performSegue(withIdentifier: "signedInSegue", sender: nil)
 
         }
